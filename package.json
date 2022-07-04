@@ -1,6 +1,7 @@
 {
   "name": "template",
   "version": "1.0.0",
+  "prettier": "@titicaca/eslint-config-triple/prettierrc",
   "description": "for project default setting",
   "main": "index.js",
   "repository": "https://github.com/yoon-junseo/template.git",

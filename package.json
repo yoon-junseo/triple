@@ -11,7 +11,13 @@
     "build": "webpack --config webpack.prod.js --progress && echo '/* /index.html 200' > dist/_redirects",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint:es": "eslint '**/*.{js,ts,tsx}'",
+    "lint:es:fix": "npm run lint:es -- --fix",
+    "lint:style": "stylelint './**/*.{js,ts,tsx}'",
+    "lint:style:fix": "stylelint './**/*.{js,ts,tsx}' --fix",
+    "prettier": "prettier '**/*' --check",
+    "prettier:fix": "prettier '**/*' --write"
   },
   "dependencies": {
     "@loadable/component": "^5.15.0",
@@ -37,6 +43,7 @@
     "@storybook/testing-library": "^0.0.9",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "12.1.5",
+    "@titicaca/eslint-config-triple": "^3.1.0",
     "@types/loadable__component": "^5.13.4",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",

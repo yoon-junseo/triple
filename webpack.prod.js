@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { merge } = require('webpack-merge');
-const common = require('./webpack.common.js');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { merge } = require('webpack-merge')
+const common = require('./webpack.common.js')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = merge(common, {
   mode: 'production',
@@ -29,4 +29,4 @@ module.exports = merge(common, {
       },
     },
   },
-});
+})

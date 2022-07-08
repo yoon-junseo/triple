@@ -4,7 +4,7 @@ import useCountUp from '@/hooks/useCountUp'
 
 import * as Styled from './style'
 
-interface MetricItemProps {
+export interface MetricItemProps {
   endNumber: number
   duration: number
   unit: string

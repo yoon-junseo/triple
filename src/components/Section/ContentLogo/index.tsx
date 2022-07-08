@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as Styled from './style'
 
-interface ContentLogoProps {
+export interface ContentLogoProps {
   duration: string
   delay: string
   children: React.ReactNode

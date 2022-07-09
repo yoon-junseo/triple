@@ -1,12 +1,10 @@
 import React from 'react'
 
-import useCountUp from '@/hooks/useCountUp'
+import useCountUp, { UseCountUpProps } from '@/hooks/useCountUp'
 
 import * as Styled from './style'
 
-export interface MetricItemProps {
-  endNumber: number
-  duration: number
+export interface MetricItemProps extends UseCountUpProps {
   unit: string
   content: string
 }

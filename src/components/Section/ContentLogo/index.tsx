@@ -1,10 +1,10 @@
 import React from 'react'
 
+import { FadeInUpContainerProps } from '@/types/animation'
+
 import * as Styled from './style'
 
-export interface ContentLogoProps {
-  duration: string
-  delay: string
+export interface ContentLogoProps extends FadeInUpContainerProps {
   children: React.ReactNode
 }
 

@@ -1,5 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 
+import { FadeInUpContainerProps } from '@/types/animation'
+
 const fadeInUp = keyframes`
     from {
         opacity: 0;
@@ -11,10 +13,7 @@ const fadeInUp = keyframes`
     }
 `
 
-export const FadeInUpContainer = styled.div<{
-  duration: string
-  delay: string
-}>`
+export const FadeInUpContainer = styled.div<FadeInUpContainerProps>`
   animation: ${fadeInUp} ${({ duration }) => duration} ${({ delay }) => delay}
     forwards;
 `

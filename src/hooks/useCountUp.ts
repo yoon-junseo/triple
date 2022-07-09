@@ -2,12 +2,12 @@ import { useState, useEffect, useRef } from 'react'
 
 import { easeOutExpo } from '@/lib/util/animation'
 
-interface AnimationProps {
+export interface UseCountUpProps {
   endNumber: number
   duration: number
 }
 
-const useCountUp = ({ endNumber, duration }: AnimationProps) => {
+const useCountUp = ({ endNumber, duration }: UseCountUpProps) => {
   const [count, setCount] = useState<number>(0)
   const requestAnimationFrameId = useRef<number>(0)
 

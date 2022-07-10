@@ -1,5 +1,9 @@
 # 트리플 과제
 
+## 요구사항
+![image](https://user-images.githubusercontent.com/28842641/178129962-75203bec-8086-4071-8900-d13800cc180a.png)
+
+
 ## 프로젝트 실행 방법
 
 ```

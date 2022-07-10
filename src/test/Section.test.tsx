@@ -29,12 +29,12 @@ describe('<Section />', () => {
   it('renders MetricItem correctly', async () => {
     const { getByText } = render(<Section />)
 
-    const MetricItem1 = await waitFor(() => getByText(/700/i))
-    const MetricItem2 = await waitFor(() => getByText(/100/i))
-    const MetricItem3 = await waitFor(() => getByText(/470/i))
+    const TravelerMetricItem = await waitFor(() => getByText(/700/i))
+    const TravelReviewMetricItem = await waitFor(() => getByText(/100/i))
+    const TravelPlansMetricItem = await waitFor(() => getByText(/470/i))
 
-    expect(MetricItem1).toBeInTheDocument()
-    expect(MetricItem2).toBeInTheDocument()
-    expect(MetricItem3).toBeInTheDocument()
+    expect(TravelerMetricItem).toBeInTheDocument()
+    expect(TravelReviewMetricItem).toBeInTheDocument()
+    expect(TravelPlansMetricItem).toBeInTheDocument()
   })
 })

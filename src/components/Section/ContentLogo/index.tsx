@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { FadeInUpContainerProps } from '@/types/animation'
+import { FadeInUpProps } from '@/types/animation'
 
 import * as Styled from './style'
 
-export interface ContentLogoProps extends FadeInUpContainerProps {
+export interface ContentLogoProps extends FadeInUpProps {
   children: React.ReactNode
 }
 

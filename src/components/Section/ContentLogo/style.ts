@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
-import { FadeInUpContainer } from '@/styles/animation'
-import Theme from '@/styles/Theme'
+import { FadeInUpProps } from '@/types/animation'
 
-export const Wrapper = styled(FadeInUpContainer)`
+import Theme from '@/styles/Theme'
+import { fadeInUpAnimation } from '@/styles/animation'
+
+export const Wrapper = styled.div<FadeInUpProps>`
   position: absolute;
   top: 150px;
 
@@ -20,4 +22,6 @@ export const Wrapper = styled(FadeInUpContainer)`
   text-align: center;
   font-size: 15px;
   color: ${Theme.grayColor700};
+
+  ${fadeInUpAnimation}
 `

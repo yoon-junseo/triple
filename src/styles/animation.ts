@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components'
+import { css, keyframes } from 'styled-components'
 
-import { FadeInUpContainerProps } from '@/types/animation'
+import { FadeInUpProps } from '@/types/animation'
 
 const fadeInUp = keyframes`
     from {
@@ -13,7 +13,7 @@ const fadeInUp = keyframes`
     }
 `
 
-export const FadeInUpContainer = styled.div<FadeInUpContainerProps>`
+export const fadeInUpAnimation = css<FadeInUpProps>`
   animation: ${fadeInUp} ${({ duration }) => duration} ${({ delay }) => delay}
     forwards;
 `

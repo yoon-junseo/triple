@@ -1,4 +1,4 @@
-export interface FadeInUpContainerProps {
+export interface FadeInUpProps {
   duration: string
   delay: string
 }
